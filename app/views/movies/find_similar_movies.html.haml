@@ -1,0 +1,5 @@
+%h1= "Similar movies of #{@movie.title}"
+
+%ul
+  - @similar_movies.each do |s_movie|
+    %li= s_movie.title
